@@ -1,3 +1,38 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.header {
+  box-shadow: 0 0 2px #888888;
+  @apply bg-gradient-to-r from-green-500 to-green-900 max-sm:px-3 px-6 py-3.5 text-white border-b-[1.5px] border-white z-40;
+}
+
+.aside {
+  box-shadow: 0 0 1px #888888;
+}
+
+.main {
+  @apply flex flex-col min-h-screen bg-[#cccccc]/30;
+}
+
+.layout {
+  @apply flex flex-col min-h-screen bg-[#cccccc]/20;
+}
+
+.button {
+  @apply text-xs text-white transition duration-500 ease-in-out bg-gradient-to-r from-green-500 to-green-700 cursor-pointer px-3 py-1 shadow-sm rounded;
+}
+
+.footer {
+  box-shadow: 0 0 5px #888888;
+  @apply bg-green-700 text-white text-sm text-center mt-auto py-8 px-6 border-t-[1.5px] border-white z-40;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  @apply hidden;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
