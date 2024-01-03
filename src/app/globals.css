@@ -9,10 +9,11 @@
 
 .aside {
   box-shadow: 0 0 1px #888888;
+  @apply fixed min-h-screen max-sm:hidden;
 }
 
 .main {
-  @apply flex flex-col min-h-screen bg-[#cccccc]/30;
+  @apply flex flex-col min-h-screen bg-[#cccccc]/30 md:ml-[15%];
 }
 
 .layout {

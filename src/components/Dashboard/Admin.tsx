@@ -1,13 +1,14 @@
-import { Home, Send, ShoppingBag, Users } from "react-feather";
+import {ArrowRight, Filter, Home, Send, ShoppingBag, Users} from "react-feather";
 import { StatsCard } from "../StatsCard";
 import { JobsData } from "../../../utilities/data";
 import { status_checker } from "../../../utilities/helpers";
+import Link from "next/link";
 
 export const AdminDashboard = () => {
   return (
     <div>
       {/* breadcrumb */}
-      <p className="text-md font-normal text-sm text-green-700 hover:cursor-pointer">
+      <p className="text-md font-normal w-fit text-sm text-green-700 hover:cursor-pointer">
         Dashboard
       </p>
 
@@ -40,10 +41,12 @@ export const AdminDashboard = () => {
       </div>
 
       {/* table */}
-      <div className="w-full bg-white rounded shadow-sm max-sm:my-10 my-16 pb-10">
+      <div className="w-full bg-white rounded shadow-sm max-sm:my-10 my-8">
         <div className="flex justify-between font-normal text-sm px-3 py-5">
           <p className="text-sm">Recent Jobs</p>
-          <p className="button">View More Jobs</p>
+          <div className="button flex space-x-2 items-center">
+            <Filter size={16} />
+            <p>Filter</p></div>
         </div>
         <div className="overflow-x-scroll no-scrollbar text-sm">
           <table className="w-full">
@@ -92,6 +95,14 @@ export const AdminDashboard = () => {
               </tbody>
             ))}
           </table>
+        </div>
+        <div className="flex justify-end font-normal text-sm px-3 py-5">
+          <Link href="/jobs">
+            <div className="button flex space-x-2 items-center">
+              <ArrowRight size={16} className={"animate-none"} />
+              <p>View More Jobs</p>
+            </div>
+          </Link>
         </div>
       </div>
     </div>

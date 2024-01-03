@@ -90,4 +90,17 @@ export const JobsData = [
       "Applicants must be at least 5 years of experience in the field. Expert in working with Kubernetes, Docker, and Git. You will be working on a team of 5 and will be working on multiple projects. You have to be a fast learner and demonstrate excellent problem solving skills.",
     salary: "100000",
   },
+  {
+    id: 8,
+    title: "Full Stack Engineer",
+    type: "Full Time",
+    company: "Google",
+    location: "Lagos, Nigeria",
+    status: "open",
+    date: "2023-12-12",
+    deadline: "2023-12-29",
+    description:
+      "You will be working on a team of 5 and will be working on multiple projects. You have to be a fast learner and demonstrate excellent problem solving skills.",
+    salary: "100000",
+  },
 ];

@@ -1,9 +1,9 @@
 import React, { FC, useState } from "react";
-import image from "../../assets/images/job-portal.webp";
+import image from "../assets/images/job-portal.webp";
 import { Facebook, Instagram, Linkedin, Twitter, Youtube } from "react-feather";
 import Image from "next/image";
 import axios from "axios";
-import { GuestProps } from "../../../utilities/types";
+import { GuestProps } from "../../utilities/types";
 
 const Guest: FC<GuestProps> = (props) => {
   const { setIsAuthenticated } = props;

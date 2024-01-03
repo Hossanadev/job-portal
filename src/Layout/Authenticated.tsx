@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
-import { Header } from "../../components/Header";
-import { ChildrenProps } from "../../../utilities/types";
+import { Header } from "@/components/Header";
+import { ChildrenProps } from "../../utilities/types";
 import { Sidebar } from "@/components/Sidebar";
 
 const Authenticated: React.FC<ChildrenProps> = (props) => {
@@ -10,7 +10,7 @@ const Authenticated: React.FC<ChildrenProps> = (props) => {
     <div>
       <Header />
       <div className="flex min-h-screen">
-        <aside className="aside sidebar w-[17%] max-md:hidden bg-white block px-5 pt-28">
+        <aside className="aside sidebar w-[15%] max-md:hidden bg-white block px-5 pt-28">
           <Sidebar />
         </aside>
         <main className="main layout w-full max-sm:px-3 px-8 pt-28">

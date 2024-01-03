@@ -12,3 +12,14 @@ export type StatsCardProps = {
   value: number | string;
   color: string;
 };
+
+export type JobsCardProps = {
+  title: string;
+  company: string;
+  location?: string;
+  status?: string;
+  date?: string;
+  id?: number;
+  href: string;
+  image: string;
+};
