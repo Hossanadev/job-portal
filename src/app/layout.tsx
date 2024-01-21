@@ -6,8 +6,8 @@ import React from "react";
 const inter = Open_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Recruitment Portal",
-  description: "Ultimate Recruitment Platform",
+  title: "Tech Jobs in Nigeria",
+  description: "Ultimate Tech Jobs Platform",
 };
 
 export default function RootLayout({

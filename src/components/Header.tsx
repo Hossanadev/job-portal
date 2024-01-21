@@ -1,26 +1,27 @@
 "use client";
 import React from "react";
-import { X, AlignRight, User } from "react-feather";
+import {Grid, User} from "react-feather";
+import Link from "next/link";
 
 export const Header: React.FC<{}> = () => {
   return (
     <div className="header flex justify-between items-center fixed w-full z-50">
-      <h1 className="font-semibold text-xl md:text-xl">Recruitment Portal</h1>
+        <Link href={"/"}><h1 className="font-semibold text-xl md:text-xl">Tech Jobs Naija</h1></Link>
       <div className="flex space-x-3 items-center">
         <div
-          className={`p-1 rounded-full w-fit border-green-700 border bg-white cursor-pointer`}
+          className={`p-0.5 rounded-full w-fit border-green-700 border bg-white/70 cursor-pointer`}
         >
           <div
-            className={`text-white p-1.5 border bg-green-500 border-green-700 w-fit rounded-full text-xs`}
+            className={`text-white p-1.5 border shadow shadow-black bg-green-500 border-green-700 w-fit rounded-full text-xs`}
           >
             <User size={20} />
           </div>
         </div>
         <div className="flex space-x-6 items-center lg:hidden">
           {(
-              <AlignRight
+              <Grid
                   size={28}
-                  className="hidden max-lg:block cursor-pointer"
+                  className="hidden max-lg:block cursor-pointer text-white/90"
               />
           )}
         </div>
