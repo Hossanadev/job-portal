@@ -100,7 +100,7 @@ export const AdminDashboard = () => {
           <Link href="/jobs">
             <div className="button flex space-x-2 items-center">
               <ArrowRight size={16} className={"animate-none"} />
-              <p>View More Jobs</p>
+              <p>View More</p>
             </div>
           </Link>
         </div>

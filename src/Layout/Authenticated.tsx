@@ -1,5 +1,5 @@
 "use client";
-import React, {useEffect} from "react";
+import React from "react";
 import { Header } from "@/components/Header";
 import { ChildrenProps } from "../../utilities/types";
 import { Sidebar } from "@/components/Sidebar";

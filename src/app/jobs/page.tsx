@@ -1,8 +1,9 @@
 import Authenticated from "@/Layout/Authenticated";
 import {JobsData} from "../../../utilities/data";
-import {Filter, Server, Command, Monitor, Figma, PlusCircle} from "react-feather";
+import {Filter, Server, Command, Monitor, Figma, PlusCircle, ArrowRight} from "react-feather";
 import {StatsCard} from "@/components/StatsCard";
 import {status_checker} from "../../../utilities/helpers";
+import Link from "next/link";
 
 export default function Jobs() {
   return (
@@ -58,7 +59,7 @@ export default function Jobs() {
                     </div>
                     <div className="overflow-x-scroll no-scrollbar text-sm">
                         <table className="w-full">
-                        <thead className="bg-[#D7FCE7] text-green-700">
+                            <thead className="bg-[#D7FCE7] text-green-700">
                             <tr>
                                 <th className="p-2 text-sm font-normal text-start">
                                     <input className="accent-green-700" type="checkbox"/>
@@ -104,9 +105,17 @@ export default function Jobs() {
                             ))}
                         </table>
                     </div>
+                    <div className="flex justify-end font-normal text-sm px-3 py-5">
+                        <Link href="#">
+                            <div className="button flex space-x-2 items-center">
+                                <ArrowRight size={16} className={"animate-none"}/>
+                                <p>Next</p>
+                            </div>
+                        </Link>
+                    </div>
                 </div>
             </div>
-                </>
+        </>
     </Authenticated>
-);
+  );
 }

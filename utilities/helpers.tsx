@@ -1,5 +1,5 @@
 export const status_checker = (status: string) => {
-  switch (status) {
+  switch (status.toLocaleLowerCase()) {
     case "open":
       return (
         <span
@@ -39,6 +39,32 @@ export const status_checker = (status: string) => {
           {status}
         </span>
       );
+      case "employer":
+          return (
+              <span
+                  style={{
+                      color: "green",
+                      backgroundColor: "rgba(0, 128, 0, 0.1)",
+                      padding: "0 10px",
+                  }}
+                  className="w-fit rounded-full inline-block"
+              >
+          {status}
+        </span>
+          );
+      case "job seeker":
+          return (
+              <span
+                  style={{
+                      color: "orange",
+                      backgroundColor: "rgba(255, 165, 0, 0.1)",
+                      padding: "0 10px",
+                  }}
+                  className="w-fit rounded-full inline-block"
+              >
+          {status}
+        </span>
+          );
     default:
       return <span>{status}</span>;
   }
