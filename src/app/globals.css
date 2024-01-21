@@ -12,8 +12,13 @@
   @apply fixed min-h-screen max-sm:hidden;
 }
 
+.mobile-aside {
+  box-shadow: 0 0 1px #888888;
+  @apply fixed min-h-screen transition-all duration-500 ease-in-out;
+}
+
 .main {
-  @apply flex flex-col min-h-screen bg-[#cccccc]/30 md:ml-[15%];
+  @apply flex flex-col min-h-screen bg-[#cccccc]/30 lg:ml-[15%];
 }
 
 .layout {

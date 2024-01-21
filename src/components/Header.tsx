@@ -1,18 +1,17 @@
-"use client";
 import React from "react";
 import {Grid, User} from "react-feather";
 import Link from "next/link";
 
-export const Header: React.FC<{}> = () => {
+export const Header: React.FC<{ setShowMobileSidebar: React.Dispatch<React.SetStateAction<boolean>>, showMobileSidebar: boolean}> = ({setShowMobileSidebar, showMobileSidebar}) => {
   return (
     <div className="header flex justify-between items-center fixed w-full z-50">
-        <Link href={"/"}><h1 className="font-semibold text-xl md:text-xl">Tech Jobs Naija</h1></Link>
+        <Link href={"/"}><h1 className="font-semibold text-xl md:text-xl">Jobs Portal</h1></Link>
       <div className="flex space-x-3 items-center">
         <div
-          className={`p-0.5 rounded-full w-fit border-green-700 border bg-white/70 cursor-pointer`}
+          className={`hidden lg:block rounded-full w-fit border-green-700 border bg-white/70 cursor-pointer`}
         >
           <div
-            className={`text-white p-1.5 border shadow shadow-black bg-green-500 border-green-700 w-fit rounded-full text-xs`}
+            className={`hidden lg:block text-white lg:p-1.5 border lg:shadow shadow-black bg-green-500 border-green-700 w-fit rounded-full text-xs`}
           >
             <User size={20} />
           </div>
@@ -21,6 +20,7 @@ export const Header: React.FC<{}> = () => {
           {(
               <Grid
                   size={28}
+                  onClick={() => {setShowMobileSidebar(!showMobileSidebar)}}
                   className="hidden max-lg:block cursor-pointer text-white/90"
               />
           )}

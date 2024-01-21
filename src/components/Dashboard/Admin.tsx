@@ -24,7 +24,7 @@ export const AdminDashboard = () => {
           icon={<Send size={20} color="green" />}
           color="#D7FCE7"
           title="Applicants"
-          value="846105"
+          value="8405"
         />
         <StatsCard
           icon={<Home size={20} color="green" />}
@@ -35,7 +35,7 @@ export const AdminDashboard = () => {
         <StatsCard
           icon={<Users size={20} color="green" />}
           title="Users"
-          value="236798105"
+          value="9805"
           color="#D7FCE7"
         />
       </div>

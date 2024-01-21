@@ -1,11 +1,4 @@
-import {
-  Briefcase,
-  Calendar,
-  Grid,
-  Home,
-  Settings,
-  Users,
-} from "react-feather";
+import {Briefcase, Calendar, Grid, Home, Settings, Users} from "react-feather";
 import Link from "next/link";
 import {useEffect, useState} from "react";
 
