@@ -49,7 +49,7 @@ const Authenticated: React.FC<ChildrenProps> = (props) => {
                   </div>
               </div>
           </aside>
-          <main className="main layout w-full max-sm:px-3 px-8 pt-28">
+          <main className="main layout w-full max-sm:px-3 px-8 max-sm:pt-24 pt-28">
               {children}
           </main>
       </div>
